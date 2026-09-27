@@ -1,1 +1,9 @@
-
+INFO System started
+INFO Sensor initialized
+WARNING Temperature high
+ERROR CAN communication failed
+ERROR CAN bus off
+INFO Retrying communication
+ERROR Sensor timeout
+ERROR Sensor timeout
+INFO System recovered
