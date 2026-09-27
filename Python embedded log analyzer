@@ -1,0 +1,24 @@
+log_data = [
+    "INFO System started",
+    "INFO Sensor initialized",
+    "WARNING Temperature high",
+    "ERROR CAN communication failed",
+    "INFO Retrying communication",
+    "ERROR Sensor timeout"
+]
+
+error_count = 0
+warning_count = 0
+
+for line in log_data:
+    if "ERROR" in line:
+        error_count += 1
+        print("Found error:", line)
+
+    if "WARNING" in line:
+        warning_count += 1
+        print("Found warning:", line)
+
+print()
+print("Total Errors:", error_count)
+print("Total Warnings:", warning_count)
